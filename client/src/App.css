@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #4F46E5;
+  --primary-hover: #4338CA;
+  --secondary-color: #6366F1;
+  --text-primary: #1F2937;
+  --text-secondary: #4B5563;
+  --background-light: #F3F4F6;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding-top: 70px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--background-light);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+}
+
+.card {
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+

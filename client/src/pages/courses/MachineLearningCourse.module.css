@@ -1,0 +1,136 @@
+.courseDetail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-light);
+  min-height: 100vh;
+}
+
+.courseDetail h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.courseDetail p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.courseInfo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.courseInfo p {
+  background-color: var(--background);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.courseDetail h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.moduleList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.moduleItem {
+  background-color: var(--background);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.moduleItem h3 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.moduleItem p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.btnPrimary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btnSecondary {
+  background-color: var(--secondary);
+  color: var(--background);
+}
+
+.btnSecondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.btnTertiary {
+  background-color: var(--background);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btnTertiary:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.courseActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .courseDetail {
+    padding: 1rem;
+  }
+
+  .courseDetail h1 {
+    font-size: 2rem;
+  }
+
+  .courseInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .moduleList {
+    grid-template-columns: 1fr;
+  }
+}
+
